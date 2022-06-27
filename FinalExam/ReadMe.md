@@ -4,3 +4,5 @@ For the data set in the table below, please use the ***K***-Nearest Neighbors al
 
 ![image](https://user-images.githubusercontent.com/80089377/176029729-6823a728-6fc1-43e5-a625-b3a24f47ac3b.png)
 
+# Program explanation
+`main.m` --> The main program. You only run this program to get the result.
