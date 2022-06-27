@@ -11,3 +11,14 @@ Apply **BFS (Breadth First Search)**, **UCS (Uniform Cost Search)**, **DFS (Dept
 
 # Program explanation
 `mainProgram.m` --> The main program. You only run this proram to solve the question.
+`FindTheShortestPathWith.m` --> Function that consist of different functions to find sortest path.
+`AToFindTheShortestPath.m` --> Function to find the sortest path of A-star.
+`BfsToFindTheShortestPath.m` --> Function to find the sortest path of BFS.
+`DfsToFindTheShortestPath.m` --> Function to find the sortest path of DFS.
+`GreedyToFindTheShortestPath.m` --> Function to find the sortest path of Greedy search.
+`UcsToFindTheShortestPath.m` --> Function to find the sortest path of UCS.
+`createObstacle.m` --> Funtion to create obstacle.
+`DisplayTheShortestPath.m` --> Function to display the sortest path of the solution.
+`DistanceCalculator.m` --> Function to calculate the distance of the solution.
+`importdata.m` --> Function to import data as point.
+

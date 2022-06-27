@@ -2,7 +2,7 @@ function FindTheShortestPathWith(searchAlgorithm, startVertex, targetVertex, imp
     % FindTheShortestPath This function finds the shortest path from the given
     % starting Vertex with the user-specified search
     %
-    % Usage: FindTheShortestPath(searchAlgorithm, startVertex, targetVertex)
+    % Usage: FindTheShortestPathWith(searchAlgorithm, startVertex, targetVertex, importedCoordinateData, tableForConnectedVertices)
     % Param: searchAlgorithm Search Algorithm that defined by user
     % startVertex Interger of starting point (or starting Vertex, e.g., 1 for Vertex 1)
     % targetVertex Interger of target point (or target Vertex, e.g., 11 for Vertex 11)

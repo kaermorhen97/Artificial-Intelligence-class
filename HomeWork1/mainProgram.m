@@ -8,7 +8,7 @@ clc
 % 'DFS' --> Depth-First Search
 % 'Greedy' --> Greedy best-first Search
 % 'Astar' --> A* Search
-searchAlgorithm = 'Astar';
+searchAlgorithm = 'BFS';
 startVertex = 1;
 targetVertex = 35;
 plotBranch = 0; % 1: plot the figure connetion between vertices; 0: doesn't plot the figure
