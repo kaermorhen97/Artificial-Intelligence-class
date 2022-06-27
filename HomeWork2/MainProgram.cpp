@@ -10,7 +10,7 @@ const int ACD = 19, ADE = 18, BCF = 11, DEG = 16, FHI = 17, GHJ = 22;
 int level = 0, A = 1, B = 2, C = 3, D = 4, E = 5, F = 6, G = 7, H = 8, I = 9, J = 10;
 const int SIZE = 11; //Including first element level
 
-bool ACDSUM(int SUM); 		// prototypes
+bool ACDSUM(int SUM); // prototypes
 bool ADESUM(int SUM);
 bool BCFSUM(int SUM);
 bool DEGSUM(int SUM);
@@ -28,7 +28,7 @@ void greedy_expandChild(vector<int> child, deque <vector<int> > *childsQueue);
 int calHeuristic(vector<int> nextLevelChild);
 int calHeuristic2(vector<int> nextLevelChild);
 
-bool ACDSUM(int SUM) { return SUM == A + C + D; }		// Checking functions
+bool ACDSUM(int SUM) { return SUM == A + C + D; } // Checking functions
 bool ADESUM(int SUM) { return SUM == A + D + E; }
 bool BCFSUM(int SUM) { return SUM == B + C + F; }
 bool DEGSUM(int SUM) { return SUM == D + E + G; }
@@ -107,7 +107,7 @@ bool DFS(vector<int> Sol, deque <vector<int> > *goalQueue) {
 	vector<int> currentChild;
 	deque <vector<int> > childsQueue; deque <vector<int> >::iterator qii;
 	childsQueue.push_back(Sol);
-	++Sol[0]; childsQueue.push_back(Sol);  //Complement the first child.
+	++Sol[0]; childsQueue.push_back(Sol); //Complement the first child.
 	cout << "\nDFS search for the numeric puzzle:\n";
 	bool found = false; time_t result = time(NULL);
 
@@ -165,7 +165,7 @@ bool Greedy(vector<int> Sol, deque <vector<int> > *goalQueue) {
 }
 void greedy_expandChild(vector<int> child, deque <vector<int> > *childsQueue) {
 	vector<int> nextLevelChild = child; ++nextLevelChild[0]; int level = child[0];
-	//    vector<int> Solution={level, 9, 6, 2, 8, 1, 3, 7, 10, 4, 5, huristicValue};	
+	// vector<int> Solution={level, 9, 6, 2, 8, 1, 3, 7, 10, 4, 5, huristicValue};	
 	deque <vector<int> >::iterator qii;
 	for (int i = level + 1, j = 0; j<SIZE - i; j++) {
 		swap(&nextLevelChild[i], &nextLevelChild[i + j]);
@@ -205,7 +205,7 @@ bool AStar(vector<int> Sol, deque <vector<int> > *goalQueue) {
 }
 void astar_expandChild(vector<int> child, deque <vector<int> > *childsQueue) {
 	vector<int> nextLevelChild = child; ++nextLevelChild[0]; int level = child[0];
-	//    vector<int> Solution={level, 9, 6, 2, 8, 1, 3, 7, 10, 4, 5, huristicValue};	
+	// vector<int> Solution={level, 9, 6, 2, 8, 1, 3, 7, 10, 4, 5, huristicValue};	
 	deque <vector<int> >::iterator qii;
 	for (int i = level + 1, j = 0; j<SIZE - i; j++) {
 		swap(&nextLevelChild[i], &nextLevelChild[i + j]);
@@ -220,7 +220,7 @@ int main() {
 	vector<int> Sol = { level, A, B, C, D, E, F, G, H, I, J }; //9 6 2 8 1 3 7 10 4 5
 	vector<int> HeuristicSol = { level, A, B, C, D, E, F, G, H, I, J, 0 }; //HeuristicSol[11] is the huristic value
 
-																		   //The following is the BFS soultion
+	// The following is the BFS soultion
 	deque <vector<int> > bfsgoalQueue; deque <vector<int> >::iterator qii;
 
 	if (BFS(Sol, &bfsgoalQueue)) {
