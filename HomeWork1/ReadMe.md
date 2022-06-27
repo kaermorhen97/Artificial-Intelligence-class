@@ -8,3 +8,6 @@ The shortest distance between two points is a straight line, and if it is not po
 
 ## Question B
 Apply **BFS (Breadth First Search)**, **UCS (Uniform Cost Search)**, **DFS (Depth-First Search)**, **Greedy Search (Greedy best-first Search)**, and **A-star** search algorithms to solve a range of problems. Use the straight-line distance for the actual distance between neighboring vertices and straight-line distance for the heuristic function of the last two algorithms (assuming that the robot can move along the edges of polygons and defining your distances proportionally by measuring in the Figure 1 ).
+
+# Program explanation
+`mainProgram.m` --> The main program. You only run this proram to solve the question.
