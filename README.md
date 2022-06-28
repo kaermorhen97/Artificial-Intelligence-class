@@ -5,7 +5,9 @@ Using BFS (Breadth First Search), UCS (Uniform Cost Search), DFS (Depth-First Se
 
 ## HomeWork2:
 1. Using BFS (Breadth First Search), UCS (Uniform Cost Search), DFS (Depth-First Search), Greedy Search (Greedy best-first Search), and A-star search algorithmsh to find out possible solutions of Magic square.
-
 2. Find the route of each solution.
-
 3. Finde the expanded nodes of each solution and time requirement to solve.
+
+## Final Exam
+1. ***K***-Nearest Neighbors algorithm for regression to predict the weights of new samples.
+2. Utilizing Euclidian and Manhattan distances.
